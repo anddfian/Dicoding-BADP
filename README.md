@@ -2,7 +2,7 @@
 Dicoding - Belajar Analisis Data dengan Python
 
 ---
-# Proyek Analisis Data: Bike Sharing Dashboard 
+# Proyek Analisis Data: Bike Sharing 
 
 ## Preview
 
