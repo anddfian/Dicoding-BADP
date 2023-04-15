@@ -6,37 +6,62 @@ Dicoding - Belajar Analisis Data dengan Python
 
 ## Preview
 
-## Project Installation to Personal Virtual Environment
+## Project installation to personal virtual environment
 The steps to create your virtual environment from this project is as follows:
 
-1. Clone this Repository
+1. Clone this repository
    ```
    git clone https://github.com/anddfian/Dicoding-BADP.git
    ```
 
-2. Install Python Virtual Environment
-  - conda
-  ```
-  conda create --name main-ds python=3.11
-  conda active main-ds
-  ```
-  - pipenv
-  ```
-  pipenv install
-  pipenv shell
-  ```
+2. Move to directory Dicoding-BADP
+   ```
+   cd Dicoding-BADP
+   ```
 
-3. Install All the Requirements Inside "requirements.txt"
+3. Create python virtual environment
+
+   python
+   ```
+   python -m venv bike_sharing_venv
+   ```
+   py
+   ```
+   py -m venv bike_sharing_venv
+   ```
+
+4. Active environment
+   ```
+   bike_sharing_venv\Scripts\activate
+   ```
+
+5. Install all the requirements inside "requirements.txt"
    ```
    pip install -r requirements.txt
    ```
 
-4. Run streamlit app
-  ```
-  streamlit run dashboard.py
-  ```
+6. Install virtual environment
 
-5. Stop the application program or server by `ctrl + c`.
+   python
+   ```
+   python -m ipykernel install --name=bike_sharing_venv
+   ```
+   py
+   ```
+   py -m ipykernel install --name=bike_sharing_venv
+   ```
+
+6. Deactive Environment
+   ```
+   bike_sharing_venv\Scripts\deactivate
+   ```
+
+6. Run streamlit app
+   ```
+   streamlit run dashboard.py
+   ```
+
+7. Stop the application program by `ctrl + c`.
 
 ## Referensi
 [Bike Sharing Dataset](https://drive.google.com/file/d/1RaBmV6Q6FYWU4HWZs80Suqd7KQC34diQ/view?usp=sharing)
