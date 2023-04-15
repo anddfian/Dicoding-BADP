@@ -11,7 +11,7 @@ The steps to create your virtual environment from this project is as follows:
 
 1. Clone this Repository
    ```
-   git clone https://github.com/anddfian/trashrecycleapp.git
+   git clone https://github.com/anddfian/Dicoding-BADP.git
    ```
 
 2. Install Python Virtual Environment
