@@ -4,6 +4,7 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 import csv
+from pathlib import Path
 
 def create_daily_orders_df(df):
     daily_order_df = df.resample(rule="D", on="order_date").agg({
@@ -249,11 +250,14 @@ def best_customer_based_on_rfm_parameters(df):
 
 if __name__ == "__main__":
     sns.set(style="dark")
-    csv_filename = 'dc.csv'
+
+    csv_filename = Path(__file__).parents[1] / 'Latihan/dc.csv'
 
     st.header("Dicoding Collection Dashboard :sparkles:")
 
-    all_df = pd.read_csv("all_data.csv")
+    all_data_csv = Path(__file__).parents[1] / 'Latihan/all_data.csv'
+
+    all_df = pd.read_csv(all_data_csv)
 
     date = sidebar(all_df)
     if(len(date) == 2):
