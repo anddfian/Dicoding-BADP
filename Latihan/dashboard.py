@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+from pathlib import Path
 
 def create_daily_orders_df(df):
     daily_order_df = df.resample(rule="D", on="order_date").agg({
