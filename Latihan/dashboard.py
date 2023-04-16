@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
-import csv
-from pathlib import Path
 
 def create_daily_orders_df(df):
     daily_order_df = df.resample(rule="D", on="order_date").agg({
@@ -78,19 +76,16 @@ def sidebar(df):
     with st.sidebar:
         st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
 
+        def on_change():
+            st.session_state.date = date
+
         date = st.date_input(
             label="Rentang Waktu", 
             min_value=min_date, 
             max_value=max_date,
             value=[min_date, max_date],
+            on_change=on_change
         )
-
-        if(len(date) == 2):
-            with open(csv_filename, mode="w") as csv_file:
-                fieldnames = ["start_date", "end_date"]
-                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-                writer.writeheader()
-                writer.writerow({"start_date": date[0], "end_date": date[1]})
 
     return date
 
@@ -251,8 +246,6 @@ def best_customer_based_on_rfm_parameters(df):
 if __name__ == "__main__":
     sns.set(style="dark")
 
-    csv_filename = Path(__file__).parents[1] / 'Latihan/dc.csv'
-
     st.header("Dicoding Collection Dashboard :sparkles:")
 
     all_data_csv = Path(__file__).parents[1] / 'Latihan/all_data.csv'
@@ -263,17 +256,7 @@ if __name__ == "__main__":
     if(len(date) == 2):
         main_df = all_df[(all_df["order_date"] >= str(date[0])) & (all_df["order_date"] <= str(date[1]))]
     else:
-        current_date_csv = []
-        with open(csv_filename, mode="r") as csv_file:
-            csv_reader = csv.DictReader(csv_file)
-            for row in csv_reader:
-                current_date_csv.append(row)
-
-        current_date = []
-        for data in current_date_csv:
-            current_date = [data["start_date"], data["end_date"]]
-
-        main_df = all_df[(all_df["order_date"] >= str(current_date[0])) & (all_df["order_date"] <= str(current_date[1]))]
+        main_df = all_df[(all_df["order_date"] >= str(st.session_state.date[0])) & (all_df["order_date"] <= str(st.session_state.date[1]))]
 
     daily_orders_df = create_daily_orders_df(main_df)
     daily_orders(daily_orders_df)
