@@ -1,5 +1,5 @@
 # Proyek Analisis Data: Dicoding Collection 
-Link Streamlit Cloud : [Dicoding Collection Dashboard](https://anddfian-dicoding-badp-latihandashboard-lucbha.streamlit.app/)
+Link Streamlit Cloud : [Dicoding Collection Dashboard](https://anddfian-dicoding-collection.streamlit.app/)
 
 ## Preview
 
