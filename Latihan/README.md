@@ -1,5 +1,5 @@
-# Proyek Analisis Data: Bike Sharing 
-Link Streamlit Cloud : [Bike Sharing Dashboard]()
+# Proyek Analisis Data: Dicoding Collection 
+Link Streamlit Cloud : [Dicoding Collection Dashboard](https://anddfian-dicoding-badp-latihandashboard-lucbha.streamlit.app/)
 
 ## Preview
 
@@ -16,25 +16,25 @@ The steps to create your virtual environment from this project is as follows:
    cd Dicoding-BADP
    ```
 
-3. Move to directory Submission
+3. Move to directory Latihan
    ```
-   cd Submission
+   cd Latihan
    ```
 
 4. Create python virtual environment
 
    python
    ```
-   python -m venv bike_sharing_venv
+   python -m venv dicoding_collection_venv
    ```
    py
    ```
-   py -m venv bike_sharing_venv
+   py -m venv dicoding_collection_venv
    ```
 
 5. Active environment
    ```
-   bike_sharing_venv\Scripts\activate
+   dicoding_collection_venv\Scripts\activate
    ```
 
 6. Install all the requirements inside "requirements.txt"
@@ -46,16 +46,16 @@ The steps to create your virtual environment from this project is as follows:
 
    python
    ```
-   python -m ipykernel install --name=bike_sharing_venv
+   python -m ipykernel install --name=dicoding_collection_venv
    ```
    py
    ```
-   py -m ipykernel install --name=bike_sharing_venv
+   py -m ipykernel install --name=dicoding_collection_venv
    ```
 
 8. Deactive Environment
    ```
-   bike_sharing_venv\Scripts\deactivate
+   dicoding_collection_venv\Scripts\deactivate
    ```
 
 9. Run streamlit app
@@ -66,4 +66,4 @@ The steps to create your virtual environment from this project is as follows:
 10. Stop the application program by `ctrl + c`.
 
 ## Referensi
-[Bike Sharing Dataset](https://drive.google.com/file/d/1RaBmV6Q6FYWU4HWZs80Suqd7KQC34diQ/view?usp=sharing)
+[Dicoding Collection Dataset](https://github.com/dicodingacademy/dicoding_dataset)
