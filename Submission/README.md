@@ -1,4 +1,5 @@
 # Proyek Analisis Data: Bike Sharing 
+Link Streamlit Cloud : [Bike Sharing Dashboard]()
 
 ## Preview
 
@@ -15,7 +16,13 @@ The steps to create your virtual environment from this project is as follows:
    cd Dicoding-BADP
    ```
 
-3. Create python virtual environment
+3. Move to directory Submission
+   ```
+   cd Submission
+   ```
+
+
+4. Create python virtual environment
 
    python
    ```
@@ -26,17 +33,17 @@ The steps to create your virtual environment from this project is as follows:
    py -m venv bike_sharing_venv
    ```
 
-4. Active environment
+5. Active environment
    ```
    bike_sharing_venv\Scripts\activate
    ```
 
-5. Install all the requirements inside "requirements.txt"
+6. Install all the requirements inside "requirements.txt"
    ```
    pip install -r requirements.txt
    ```
 
-6. Install virtual environment
+7. Install virtual environment
 
    python
    ```
@@ -47,17 +54,17 @@ The steps to create your virtual environment from this project is as follows:
    py -m ipykernel install --name=bike_sharing_venv
    ```
 
-6. Deactive Environment
+8. Deactive Environment
    ```
    bike_sharing_venv\Scripts\deactivate
    ```
 
-6. Run streamlit app
+9. Run streamlit app
    ```
    streamlit run dashboard.py
    ```
 
-7. Stop the application program by `ctrl + c`.
+10. Stop the application program by `ctrl + c`.
 
 ## Referensi
 [Bike Sharing Dataset](https://drive.google.com/file/d/1RaBmV6Q6FYWU4HWZs80Suqd7KQC34diQ/view?usp=sharing)
