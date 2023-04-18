@@ -249,7 +249,7 @@ if __name__ == "__main__":
 
     st.header("Dicoding Collection Dashboard :sparkles:")
 
-    all_data_csv = Path(__file__).parents[1] / 'Latihan/dashboard/all_data.csv'
+    all_data_csv = Path(__file__).parents[1] / 'dashboard/all_data.csv'
 
     all_df = pd.read_csv(all_data_csv)
 
