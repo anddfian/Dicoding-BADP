@@ -1,5 +1,5 @@
 # Proyek Analisis Data: Bike Sharing 
-Link Streamlit Cloud : [Bike Sharing Dashboard]()
+Link Streamlit Cloud : [Bike Sharing Dashboard](https://anddfian-bike-sharing.streamlit.app/)
 
 ## Preview
 
@@ -22,14 +22,8 @@ The steps to create your virtual environment from this project is as follows:
    ```
 
 4. Create python virtual environment
-
-   python
    ```
    python -m venv bike_sharing_venv
-   ```
-   py
-   ```
-   py -m venv bike_sharing_venv
    ```
 
 5. Active environment
@@ -43,14 +37,8 @@ The steps to create your virtual environment from this project is as follows:
    ```
 
 7. Install virtual environment
-
-   python
    ```
    python -m ipykernel install --name=bike_sharing_venv
-   ```
-   py
-   ```
-   py -m ipykernel install --name=bike_sharing_venv
    ```
 
 8. Deactive Environment
