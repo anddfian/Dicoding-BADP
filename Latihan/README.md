@@ -22,14 +22,8 @@ The steps to create your virtual environment from this project is as follows:
    ```
 
 4. Create python virtual environment
-
-   python
    ```
    python -m venv dicoding_collection_venv
-   ```
-   py
-   ```
-   py -m venv dicoding_collection_venv
    ```
 
 5. Active environment
@@ -43,14 +37,8 @@ The steps to create your virtual environment from this project is as follows:
    ```
 
 7. Install virtual environment
-
-   python
    ```
    python -m ipykernel install --name=dicoding_collection_venv
-   ```
-   py
-   ```
-   py -m ipykernel install --name=dicoding_collection_venv
    ```
 
 8. Deactive Environment
