@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     st.header("Bike Sharing Dashboard :bike:")
 
-    day_df_csv = Path(__file__).parents[1] / 'Submission/day_clean.csv'
+    day_df_csv = Path(__file__).parents[1] / 'dashboard/day_clean.csv'
 
     day_df = pd.read_csv(day_df_csv)
 
