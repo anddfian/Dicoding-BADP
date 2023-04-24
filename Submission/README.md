@@ -3,6 +3,7 @@ Link Streamlit Cloud : [Bike Sharing Dashboard](https://anddfian-bike-sharing.st
 
 ## Preview
 
+
 ## Project installation to personal virtual environment
 The steps to create your virtual environment from this project is as follows:
 
@@ -33,7 +34,7 @@ The steps to create your virtual environment from this project is as follows:
 
 6. Install all the requirements inside "requirements.txt"
    ```
-   pip install -r requirements.txt
+   pip install -r dashboard\requirements.txt
    ```
 
 7. Install virtual environment
