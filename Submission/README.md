@@ -2,6 +2,7 @@
 Link Streamlit Cloud : [Bike Sharing Dashboard](https://anddfian-bike-sharing.streamlit.app/)
 
 ## Preview
+![Bike Sharing Dashboard Streamlit Preview](https://raw.githubusercontent.com/anddfian/Dicoding-BADP/main/Submission/preview.png)
 
 
 ## Project installation to personal virtual environment
